@@ -166,3 +166,7 @@ button:hover {
   font-size: 0.9rem;
 }
 
+
+.warning-text {
+  color: #ffb4b4;
+}

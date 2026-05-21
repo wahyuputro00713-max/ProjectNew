@@ -1,25 +1,24 @@
-export default function AdminLoginPage() {
+export default function LoginPage() {
   return (
     <main className="login-shell">
       <div className="bg-orb orb-1" />
       <div className="bg-orb orb-2" />
 
-      <section className="login-card" aria-label="Admin login form">
-        <p className="badge">🔐 Admin Portal</p>
-        <h1>Masuk Admin WebApp</h1>
+      <section className="login-card" aria-label="Login form">
+        <p className="badge">✨ Welcome back</p>
+        <h1>Masuk ke Akun Anda</h1>
         <p className="subtitle">
-          Halaman ini hanya untuk administrator. Gunakan akun admin Anda untuk mengelola pengguna,
-          konten, dan pengaturan sistem.
+          Kelola proyek Anda dengan pengalaman UI modern, cepat, dan aman.
         </p>
 
         <form className="login-form">
-          <label htmlFor="adminId">Admin ID</label>
+          <label htmlFor="email">Email</label>
           <input
-            id="adminId"
-            name="adminId"
-            type="text"
-            placeholder="admin.supervisor"
-            autoComplete="username"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="nama@perusahaan.com"
+            autoComplete="email"
             required
           />
 
@@ -28,38 +27,26 @@ export default function AdminLoginPage() {
             id="password"
             name="password"
             type="password"
-            placeholder="Masukkan password admin"
+            placeholder="Masukkan password"
             autoComplete="current-password"
-            required
-          />
-
-          <label htmlFor="otp">Kode Verifikasi (OTP)</label>
-          <input
-            id="otp"
-            name="otp"
-            type="text"
-            placeholder="6 digit OTP"
-            inputMode="numeric"
-            pattern="[0-9]{6}"
-            maxLength={6}
             required
           />
 
           <div className="form-row">
             <label className="remember">
-              <input type="checkbox" name="trustedDevice" />
-              Perangkat terpercaya
+              <input type="checkbox" name="remember" />
+              Ingat saya
             </label>
             <a href="#" className="link">
-              Hubungi super admin
+              Lupa password?
             </a>
           </div>
 
-          <button type="submit">Masuk ke Dashboard Admin</button>
+          <button type="submit">Masuk</button>
         </form>
 
-        <p className="signup warning-text">
-          Akses tidak sah akan dicatat oleh sistem keamanan.
+        <p className="signup">
+          Belum punya akun? <a href="#">Daftar sekarang</a>
         </p>
       </section>
     </main>
