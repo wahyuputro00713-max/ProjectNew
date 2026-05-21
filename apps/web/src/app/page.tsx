@@ -48,6 +48,10 @@ export default function LoginPage() {
         <p className="signup">
           Belum punya akun? <a href="#">Daftar sekarang</a>
         </p>
+
+        <a href="http://localhost:3001" className="admin-entry" aria-label="Buka login admin">
+          Masuk sebagai Admin
+        </a>
       </section>
     </main>
   );
