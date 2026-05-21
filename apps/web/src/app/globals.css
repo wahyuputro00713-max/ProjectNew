@@ -165,3 +165,17 @@ button:hover {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+
+.admin-entry {
+  display: block;
+  margin-top: 0.9rem;
+  text-align: center;
+  color: #ffd489;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.admin-entry:hover {
+  text-decoration: underline;
+}
