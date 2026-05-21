@@ -168,8 +168,14 @@ button:hover {
 
 
 .admin-entry {
-  display: block;
+  display: inline-flex;
+  justify-content: center;
   margin-top: 0.9rem;
+  width: 100%;
+  border: 1px solid rgba(255, 212, 137, 0.45);
+  border-radius: 12px;
+  padding: 0.72rem 1rem;
+  background: rgba(255, 212, 137, 0.08);
   text-align: center;
   color: #ffd489;
   text-decoration: none;
@@ -177,5 +183,6 @@ button:hover {
 }
 
 .admin-entry:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background: rgba(255, 212, 137, 0.14);
 }
