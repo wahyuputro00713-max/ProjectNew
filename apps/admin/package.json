@@ -1,1 +1,11 @@
-
+{
+  "name": "admin",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"admin app is not configured yet\"",
+    "build": "echo \"admin app is not configured yet\"",
+    "start": "echo \"admin app is not configured yet\"",
+    "lint": "echo \"admin app is not configured yet\""
+  }
+}
