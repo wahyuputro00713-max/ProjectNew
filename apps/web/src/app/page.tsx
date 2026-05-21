@@ -49,8 +49,8 @@ export default function LoginPage() {
           Belum punya akun? <a href="#">Daftar sekarang</a>
         </p>
 
-        <a href="http://localhost:3001" className="admin-entry" aria-label="Buka login admin">
-          Masuk sebagai Admin
+        <a href="/admin" className="admin-entry" aria-label="Buka login admin">
+          Login Admin
         </a>
       </section>
     </main>
