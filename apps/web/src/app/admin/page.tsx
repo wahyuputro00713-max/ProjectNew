@@ -1,22 +1,57 @@
-const adminPortalUrl = process.env.NEXT_PUBLIC_ADMIN_PORTAL_URL ?? 'http://localhost:3001';
-
-export default function AdminEntryPage() {
+export default function AdminLoginPage() {
   return (
     <main className="login-shell">
       <div className="bg-orb orb-1" />
       <div className="bg-orb orb-2" />
 
-      <section className="login-card" aria-label="Admin access helper">
-        <p className="badge">🔐 Admin Access</p>
-        <h1>Halaman Admin</h1>
+      <section className="login-card" aria-label="Admin login form">
+        <p className="badge">🔐 Admin Portal</p>
+        <h1>Masuk Admin WebApp</h1>
         <p className="subtitle">
-          Jika Anda admin, lanjutkan ke portal admin terpisah. Jika tombol tidak bekerja di lingkungan
-          produksi, set variabel <code>NEXT_PUBLIC_ADMIN_PORTAL_URL</code> ke URL admin yang benar.
+          Halaman ini hanya untuk administrator. Gunakan akun admin Anda untuk mengelola pengguna,
+          konten, dan pengaturan sistem.
         </p>
 
-        <a href={adminPortalUrl} className="admin-entry" aria-label="Buka login admin">
-          Buka Login Admin
-        </a>
+        <form className="login-form">
+          <label htmlFor="adminId">Admin ID</label>
+          <input id="adminId" name="adminId" type="text" placeholder="admin.supervisor" autoComplete="username" required />
+
+          <label htmlFor="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Masukkan password admin"
+            autoComplete="current-password"
+            required
+          />
+
+          <label htmlFor="otp">Kode Verifikasi (OTP)</label>
+          <input
+            id="otp"
+            name="otp"
+            type="text"
+            placeholder="6 digit OTP"
+            inputMode="numeric"
+            pattern="[0-9]{6}"
+            maxLength={6}
+            required
+          />
+
+          <div className="form-row">
+            <label className="remember">
+              <input type="checkbox" name="trustedDevice" />
+              Perangkat terpercaya
+            </label>
+            <a href="#" className="link">
+              Hubungi super admin
+            </a>
+          </div>
+
+          <button type="submit">Masuk ke Dashboard Admin</button>
+        </form>
+
+        <p className="signup warning-text">Akses tidak sah akan dicatat oleh sistem keamanan.</p>
       </section>
     </main>
   );
