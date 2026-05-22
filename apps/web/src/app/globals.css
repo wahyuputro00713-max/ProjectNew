@@ -186,3 +186,7 @@ button:hover {
   text-decoration: none;
   background: rgba(255, 212, 137, 0.14);
 }
+
+.warning-text {
+  color: #ffb4b4;
+}
