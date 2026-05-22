@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function LoginPage() {
   return (
     <main className="login-shell">
@@ -49,9 +51,9 @@ export default function LoginPage() {
           Belum punya akun? <a href="#">Daftar sekarang</a>
         </p>
 
-        <a href="/admin" className="admin-entry" aria-label="Buka login admin">
+        <Link href="/admin" className="admin-entry" aria-label="Buka login admin">
           Login Admin
-        </a>
+        </Link>
       </section>
     </main>
   );
