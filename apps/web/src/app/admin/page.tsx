@@ -52,6 +52,9 @@ export default function AdminLoginPage() {
         </form>
 
         <p className="signup warning-text">Akses tidak sah akan dicatat oleh sistem keamanan.</p>
+        <p className="signup">
+          Bukan admin? <a href="/">Kembali ke login user</a>
+        </p>
       </section>
     </main>
   );
